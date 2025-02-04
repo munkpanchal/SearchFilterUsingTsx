@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+label {
+    @apply text-xs cursor-pointer capitalize;
+}
+input {
+    @apply p-2 text-xs accent-amber-500;
+}
+input[type="text"],
+input[type="number"] {
+    @apply w-full p-2 border border-slate-300 rounded-lg focus-within:outline-none;
+}
+h2 {
+    @apply text-xl font-bold capitalize text-slate-900 border-b border-slate-300 pb-2;
+}
+h3 {
+    @apply text-lg font-bold capitalize text-slate-900 border-b border-slate-300 pb-2;
+}
+
+p {
+    strong {
+        @apply inline-block w-30;
+    }
+}
+
+.btn {
+    @apply px-8  py-2 text-sm uppercase font-semibold tracking-wider cursor-pointer active:scale-95 rounded transition-all;
+    &.btn-fill {
+        @apply bg-slate-900 hover:bg-slate-700 text-white;
+    }
+    &.btn-outline {
+        @apply border border-slate-900 hover:bg-slate-900 hover:text-slate-100;
+    }
+    &.btn-outline-rounded {
+        @apply border border-slate-900 p-2 rounded-full w-10 h-10 flex items-center justify-center text-xs;
+    }
+}
