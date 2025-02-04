@@ -14,6 +14,7 @@ const SingleProduct = ({
                 <figure className="aspect-[4/3]">
                     <img
                         className="w-full h-full object-contain transition group-hover:scale-110"
+                        loading="lazy"
                         src={images[0]}
                         alt={title}
                     />
