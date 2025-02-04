@@ -1,12 +1,11 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import SingleProduct from "./SingleProduct";
 import { useFilter } from "../context/filterContext";
 import Loader from "./Loader";
 
 const Products = () => {
     const [products, setProducts] = useState<any[]>([]);
-    const [filter, setFilter] = useState("all");
     const [currentPage, setCurrentPage] = useState(1);
 
     const filterProps = useFilter();
