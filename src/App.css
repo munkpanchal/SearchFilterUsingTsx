@@ -14,7 +14,7 @@ h2 {
     @apply text-xl font-bold capitalize text-slate-900 border-b border-slate-300 pb-2;
 }
 h3 {
-    @apply text-lg font-bold capitalize text-slate-900 border-b border-slate-300 pb-2;
+    @apply text-base sm:text-lg font-bold capitalize text-slate-900 border-b border-slate-300 pb-2;
 }
 
 p {
@@ -24,7 +24,7 @@ p {
 }
 
 .btn {
-    @apply px-8  py-2 text-sm uppercase font-semibold tracking-wider cursor-pointer active:scale-95 rounded transition-all;
+    @apply px-2 sm:px-8 py-1 sm:py-2 text-xs sm:text-sm uppercase font-semibold tracking-wider cursor-pointer active:scale-95 rounded transition-all;
     &.btn-fill {
         @apply bg-slate-900 hover:bg-slate-700 text-white;
     }
@@ -32,6 +32,6 @@ p {
         @apply border border-slate-900 hover:bg-slate-900 hover:text-slate-100;
     }
     &.btn-outline-rounded {
-        @apply border border-slate-900 p-2 rounded-full w-10 h-10 flex items-center justify-center text-xs;
+        @apply border border-slate-900 p-1 sm:p-2 rounded-full w-6 sm:w-10 h-6 sm:h-10 aspect-square flex items-center justify-center text-[10px] sm:text-xs;
     }
 }

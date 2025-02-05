@@ -17,7 +17,7 @@ const Products = () => {
         selectedCategory,
     } = filterProps || {};
 
-    const productsPerPage = 120;
+    const productsPerPage = 15;
 
     function getFilteredProducts() {
         let filteredProducts = products;

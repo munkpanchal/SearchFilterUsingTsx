@@ -58,9 +58,9 @@ const Sidebar = () => {
     }, [searchQuery, minPrice, maxPrice, selectedCategory]);
 
     return (
-        <section className="w-full max-w-64 min-h-dvh p-4 border-r border-slate-300">
-            <div className="flex flex-col gap-4 sticky top-4">
-                <h1 className="text-xl font-bold mb-4">
+        <section className="w-full max-w-[130px] sm:max-w-[400px] min-h-dvh p-4 border-r border-slate-300">
+            <div className="flex flex-col gap-4 sticky top-4 h-max">
+                <h1 className="text-base sm:text-xl font-bold mb-4">
                     React Store
                 </h1>
                 <div className="flex flex-col gap-4">
